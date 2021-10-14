@@ -28,20 +28,20 @@ public class App {
             // explains why we search the inputLine for 'property="name"' as this signifies
             // that the users name is in the current inputLine.
             String nameRegex = "(?<=property=\"name\">)(.*)(?=<em)";
-            while ((inputLine = reader.readLine()) != null){
-                if (inputLine.contains("property=\"name\"")){
+            while ((inputLine = reader.readLine()) != null) {
+                if (inputLine.contains("property=\"name\"")) {
                     Pattern usernamePattern = Pattern.compile(nameRegex);
                     Matcher usernamePatternMatcher = usernamePattern.matcher(inputLine);
 
-                    if(usernamePatternMatcher.find()){
+                    if (usernamePatternMatcher.find()) {
                         // group(0) gets the whole matched expression
-                        userName=usernamePatternMatcher.group(0);
+                        userName = usernamePatternMatcher.group(0);
                     } else {
                         userName = "Failed to find username.";
                     }
                 }
             }
-            System.out.printf("Associated name for ID %s is %s%n",userEmailID,userName);
+            System.out.printf("Associated name for ID %s is %s%n", userEmailID, userName);
             reader.close();
         } catch (MalformedURLException error) {
             // Catch the error where an input is not a valid webpage
