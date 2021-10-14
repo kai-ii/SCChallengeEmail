@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SCChallengeEmail:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/SCChallengeEmail_jar</output-path>
+    <root id="archive" name="SCChallengeEmail.jar">
+      <element id="module-output" name="Main" />
+    </root>
+  </artifact>
+</component>
