@@ -1,3 +1,5 @@
+package com.example.scchallengeemail;
+
 import java.io.*;
 import java.net.*;
 import java.util.Scanner;
@@ -18,7 +20,7 @@ public class App {
             // of the webpage specified by the webpageURL variable.
             BufferedReader reader = new BufferedReader(
                     new InputStreamReader(webpageURL.openStream()));
-            
+
             String inputLine;
             String userName = "";
             // Regular expression to look for chars between 'property="name">' and '<em'.
