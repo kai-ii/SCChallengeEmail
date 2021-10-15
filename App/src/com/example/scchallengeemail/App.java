@@ -1,4 +1,7 @@
 package com.example.scchallengeemail;
+/**
+ * @author Kai Chevannes
+ */
 
 import java.io.*;
 import java.net.*;
@@ -6,6 +9,9 @@ import java.util.Scanner;
 import java.util.regex.*;
 
 public class App {
+    /**
+     * Outputs a users real name given their associated email ID.
+     */
     public static void main(String[] args) {
         // Get user email ID
         Scanner scanner = new Scanner(System.in);
